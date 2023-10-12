@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Customer Survey Form</h2>
+        <div class="form-container">
+            <form id="customerForm" class="customer-form" onsubmit="return submitFun(event)">
+                <div class="line1">
+                    <div class="params">
+                        <div>Name</div>
+                        <input type="text" id="name" name="name" autocomplete="off">
+                    </div>
+                    <div class="params">
+                        <div>Email</div>
+                        <input type="email" id="email" name="email" autocomplete="off">
+                    </div>
+                </div>
+                <div class="line2">
+                    <div>Is this first time You are using our products & service?</div>
+                    <div>
+                        <input type="radio" id="q1-yes" name="q1" value="yes" checked>Yes
+                        <input type="radio" id="q1-no" name="q1" value="no">No
+                    </div>
+                </div>
+                <div class="line3">
+                    <div>Would you suggestion to your friends and collegue?</div>
+                    <div>
+                        <input type="radio" id="q2-yes" name="q2"- checked>Yes
+                        <input type="radio" id="q2-no" name="q2">No
+                    </div>
+                </div>
+                <div class="line4">
+                    <div>How satified are you with our company overall?</div>
+                    <div>
+                        <input type="radio" id="q3-satisfied" name="q3" checked>Satified
+                        <input type="radio" id="q3-undecided" name="q3">Undecided
+                        <input type="radio" id="q3-unsatified" name="q3">Unsatisfied
+                    </div>
+                </div>
+                <div class="line5">
+                    <div>Do you have suggetion to improve our service?</div>
+                    <div>
+                        <textarea cols="30" rows="10" id="q4" name="q4" autocomplete="off"></textarea>
+                    </div>
+                </div>
+                <div class="line6">
+                    <div class="btn-group">
+                        <button type="submit" class="submit-btn" id="myBtn">Submit</button>
+                        <button type="reset" class="reset-btn">Reset</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="output-param">
+        Name : <span id="modal-name"></span>
+      </div>
+      <div class="output-param">
+        Email : <span id="modal-email"></span>
+      </div>
+      <div class="output-param">
+        Is this first time You are using our products & service? : <span id="modal-q1"></span>
+      </div>
+      <div class="output-param">
+        Would you suggestion to your friends and collegue? : <span id="modal-q2"></span>
+      </div>
+      <div class="output-param">
+        How satified are you with our company overall? : <span id="modal-q3"></span>
+      </div>
+      <div class="output-param">
+        Do you have suggetion to improve our service? : <span id="modal-q4"></span>
+      </div>
+    </div>
+  
+  </div>
+    <script src="script.js"></script>
+   
+</body>
+</html>

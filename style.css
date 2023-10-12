@@ -1,0 +1,97 @@
+body{
+    background: rgb(48, 184, 247);
+}
+
+.container{
+    margin: auto;
+    width: 50%;
+   
+}
+
+.container h2{
+    text-align: center;
+    color: white;
+}
+
+.customer-form .line1{
+    display: flex;
+}
+
+.form-container{
+    box-shadow: 2px 2px 2px grey;
+    background: white;
+}
+
+.customer-form .line1 .params{
+    /* padding: 10px; */
+}
+
+.customer-form div{
+    padding: 5px;
+}
+
+.line5 textarea{
+    width: 98%;
+}
+
+.btn-group button{
+    width: 80px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.btn-group .submit-btn{
+    background: rgb(48, 184, 247);
+    color: white;
+    border: none;
+}
+
+.btn-group .reset-btn{
+    background: red;
+    color: white;
+    border: none;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .output-param{
+    margin: 10px;
+  }
